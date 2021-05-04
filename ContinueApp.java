@@ -3,8 +3,8 @@ package basic;
 public class ContinueApp {
 	public static void main(String[] args) {
 		for(int i=1;i<=5;i++) {
-			//continue : ¹İº¹¹®ÀÇ ¸í·ÉÀ» Ã³À½ºÎÅÍ ´Ù½Ã ½ÇÇàÇÏ´Â ¸í·É
-			// => continue ¸í·ÉÀÌ ½ÇÇàµÇ¸é continue ¸í·É ÇÏ´Ü¿¡ ÀÛ¼ºµÈ ¸í·É ¹Ì½ÇÇà 
+			//continue : ë°˜ë³µë¬¸ì˜ ëª…ë ¹ì„ ì²˜ìŒë¶€í„° ë‹¤ì‹œ ì‹¤í–‰í•˜ëŠ” ëª…ë ¹
+			// => continue ëª…ë ¹ì´ ì‹¤í–‰ë˜ë©´ continue ëª…ë ¹ í•˜ë‹¨ì— ì‘ì„±ëœ ëª…ë ¹ ë¯¸ì‹¤í–‰ 
 			if(i==3) continue;
 			System.out.print(i+"\t");
 		}
@@ -12,8 +12,8 @@ public class ContinueApp {
 		System.out.println("=====================================");
 		for(int i=1;i<=5;i++) {
 			for(int j=1;j<=5;j++) {
-				//continue ¸í·ÉÀÌ ÀÛ¼ºµÈ ºí·°ÀÇ ¹İº¹¹®À» Ã³À½ºÎÅÍ ´Ù½Ã ½ÇÇà
-				if(j==3) continue;//for(int j=1;j<=5;j++) ¹İº¹¹® Àç½ÇÇà
+				//continue ëª…ë ¹ì´ ì‘ì„±ëœ ë¸”ëŸ­ì˜ ë°˜ë³µë¬¸ì„ ì²˜ìŒë¶€í„° ë‹¤ì‹œ ì‹¤í–‰
+				if(j==3) continue;//for(int j=1;j<=5;j++) ë°˜ë³µë¬¸ ì¬ì‹¤í–‰
 				System.out.println("i = "+i+", j = "+j);
 			}
 		}
@@ -21,8 +21,8 @@ public class ContinueApp {
 		loop:
 		for(int i=1;i<=5;i++) {
 			for(int j=1;j<=5;j++) {
-				//¶óº§¸íÀ¸·Î ÁöÁ¤µÈ ¹İº¹¹®À» Ã³À½ºÎÅÍ ´Ù½Ã ½ÇÇà
-				if(j==3) continue loop;//for(int i=1;i<=5;i++) ¹İº¹¹® Àç½ÇÇà
+				//ë¼ë²¨ëª…ìœ¼ë¡œ ì§€ì •ëœ ë°˜ë³µë¬¸ì„ ì²˜ìŒë¶€í„° ë‹¤ì‹œ ì‹¤í–‰
+				if(j==3) break loop;//for(int i=1;i<=5;i++) ë°˜ë³µë¬¸ ì¬ì‹¤í–‰
 				System.out.println("i = "+i+", j = "+j);
 			}
 		}
